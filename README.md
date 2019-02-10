@@ -1,4 +1,13 @@
-# gcf-invoice-generator
+# Google Cloud Function Invoice Generator
+
+Simple invoice generator that takes HTML template and generates invoice based on JSON input. Example template uses [sparksuite/simple-html-invoice-template](https://github.com/sparksuite/simple-html-invoice-template).
+
+![screenshot](examples/example-screenshot.png)
+
+## Demo
+Find [PDF demo here](examples/example.pdf).
+
+## Get started
 
 See preview in browser
 ```bash
