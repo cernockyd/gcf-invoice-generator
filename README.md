@@ -1,6 +1,7 @@
 # Google Cloud Function Invoice Generator
 
-Simple invoice generator that takes HTML template and generates invoice based on JSON input. Example template uses [sparksuite/simple-html-invoice-template](https://github.com/sparksuite/simple-html-invoice-template).
+Simple invoice generator that takes HTML template and generates PDF invoice based on JSON input.
+Example template uses [sparksuite/simple-html-invoice-template](https://github.com/sparksuite/simple-html-invoice-template).
 
 ![screenshot](examples/example-screenshot.png)
 
@@ -25,10 +26,33 @@ gcloud beta functions deploy generateInvoice --stage-bucket BUCKET_NAME --trigge
 ```
 
 Usage
-- replace `GCF_URL`
+1. replace `GCF_URL`
+2. run following command and see `test-invoice.pdf`
 
 ```bash
-curl -X POST "GCF_URL" -H "Content-Type:application/json" --data '{"id":"ID","dateIssue":"date issue","dateDue":"date due","companyAddressLines":["neco1","neco2","neco3","VAT Reg no: neco4"],"userAdressLines":["necoA","necoB","VAT Reg no: necoC"],"item":{"name":"nazev","price":"cena včetně znaku"},"status":"PAID"}' > test-invoice.pdf
+
+curl -X POST "GCF_URL" -H "Content-Type:application/json" --data '
+{
+"id":"808xD",
+"dateIssue":"1. 1. 2019",
+"dateDue":"1. 2. 2019",
+"companyAddressLines":[
+  "Random Company",
+  "7687 Edgemont St. ",
+  "02026",
+  "VAT Reg no: 32162"
+],
+"userAdressLines":[
+  "John Doe",
+  "440 Cedar Street",
+  "VAT Reg no: 90403"
+  ],
+"item": {
+  "name":"Monthly Subscription Plan ",
+  "price":"150 USD"
+},
+"status":"PAID"
+}' > test-invoice.pdf
 ```
 
 
