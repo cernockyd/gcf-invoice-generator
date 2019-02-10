@@ -18,3 +18,6 @@ Usage
 ```bash
 curl -X POST "GCF_URL" -H "Content-Type:application/json" --data '{"id":"ID","dateIssue":"date issue","dateDue":"date due","companyAddressLines":["neco1","neco2","neco3","VAT Reg no: neco4"],"userAdressLines":["necoA","necoB","VAT Reg no: necoC"],"item":{"name":"nazev","price":"cena včetně znaku"},"status":"PAID"}' > test-invoice.pdf
 ```
+
+## Font license
+Used font in this repository is [Roboto](https://fonts.google.com/specimen/Roboto), licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
