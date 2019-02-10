@@ -5,6 +5,7 @@ Simple invoice generator that takes HTML template and generates invoice based on
 ![screenshot](examples/example-screenshot.png)
 
 ## Demo
+
 Find [PDF demo here](examples/example.pdf).
 
 ## Get started
