@@ -1,0 +1,22 @@
+{
+  "name": "gcf-invoice-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awfulthings/gcf-invoice-generator"
+  },
+  "dependencies": {
+    "@google-cloud/debug-agent": "^2.6.0",
+    "fs": "0.0.1-security",
+    "html-pdf": "^2.2.0",
+    "npm": "^6.4.0",
+    "pdfmake": "^0.1.37",
+    "request": "^2.88.0",
+    "uuid": "^3.3.2"
+  }
+}
